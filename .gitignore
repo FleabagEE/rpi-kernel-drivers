@@ -1,0 +1,18 @@
+# Kernel module build artifacts
+*.o
+*.ko
+*.mod
+*.mod.c
+*.mod.o
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+*.symvers
+.*.cmd
+
+# Editor artifacts
+*~
+# Compiled binaries without extension in char_driver
+char_driver/test_ioctl
+char_driver/test_poll
