@@ -12,7 +12,8 @@ device tree overlays.
 Three independent kernel modules, each demonstrating a different 
 Linux driver subsystem:
 
-\`\`\`mermaid
+```mermaid
+
 graph TB
     subgraph "char_driver"
         A[open/read/write/close] --> B[ioctl: CLEAR/GET_LEN]
@@ -41,7 +42,7 @@ graph TB
     
     F -->|UDP :12345| K
     O -->|UDP :12345| H
-\`\`\`
+```
 
 **char_driver**: standard file_operations model (open/read/write/
 close) plus ioctl for control commands and poll for event-driven 
